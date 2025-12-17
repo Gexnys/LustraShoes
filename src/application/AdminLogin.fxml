@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="329.0" style="-fx-background-color: linear-gradient(to right, #4B0082, #7851A9);;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <SVGPath content="M12 14V22H4C4 17.5817 7.58172 14 12 14ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM21 17H22V22H14V17H15V16C15 14.3431 16.3431 13 18 13C19.6569 13 21 14.3431 21 16V17ZM19 17V16C19 15.4477 18.5523 15 18 15C17.4477 15 17 15.4477 17 16V17H19Z" layoutX="152.0" layoutY="115.0" scaleX="3.0" scaleY="3.0" />
+      <TextField layoutX="90.0" layoutY="193.0" promptText="Kullanıcı Adı" style="-fx-background-color: Transparant; -fx-border-color: linear-gradient(to right, #0598ff, #4B0082 ); -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField layoutX="92.0" layoutY="232.0" promptText="Şifre" style="-fx-background-color: Transparant; -fx-border-color: linear-gradient(to right, #0598ff, #4B0082 ); -fx-border-width: 0px 0px 2px 0px;" />
+      <SVGPath content="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" layoutX="-157.0" layoutY="-46.0" scaleX="0.04" scaleY="0.04" />
+      <SVGPath content="M10.7577 11.8281L18.6066 3.97919L20.0208 5.3934L18.6066 6.80761L21.0815 9.28249L19.6673 10.6967L17.1924 8.22183L15.7782 9.63604L17.8995 11.7574L16.4853 13.1716L14.364 11.0503L12.1719 13.2423C13.4581 15.1837 13.246 17.8251 11.5355 19.5355C9.58291 21.4882 6.41709 21.4882 4.46447 19.5355C2.51184 17.5829 2.51184 14.4171 4.46447 12.4645C6.17493 10.754 8.81633 10.5419 10.7577 11.8281ZM10.1213 18.1213C11.2929 16.9497 11.2929 15.0503 10.1213 13.8787C8.94975 12.7071 7.05025 12.7071 5.87868 13.8787C4.70711 15.0503 4.70711 16.9497 5.87868 18.1213C7.05025 19.2929 8.94975 19.2929 10.1213 18.1213Z" layoutX="55.0" layoutY="242.0" />
+      <Button layoutX="125.0" layoutY="292.0" mnemonicParsing="false" style="-fx-background-color: A8DADC99; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF);;" text="Giriş Yap">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+       <Button layoutX="289.0" layoutY="8.0" mnemonicParsing="false" onAction="#CloseForm" style="-fx-background-color: ADD8E64D; -fx-border-width: 2; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF); -fx-border-radius: 50; -fx-background-radius: 50;" text="X" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Button>
+      <SVGPath content="M5.82843 6.99955L8.36396 9.53509L6.94975 10.9493L2 5.99955L6.94975 1.0498L8.36396 2.46402L5.82843 4.99955H13C17.4183 4.99955 21 8.58127 21 12.9996C21 17.4178 17.4183 20.9996 13 20.9996H4V18.9996H13C16.3137 18.9996 19 16.3133 19 12.9996C19 9.68584 16.3137 6.99955 13 6.99955H5.82843Z" layoutX="294.0" layoutY="400.0" onKeyPressed="#BackHome" onMouseClicked="#BackHome" />
+      <Button layoutX="24.0" layoutY="386.0" mnemonicParsing="false" onAction="#ShowAdminPanel" prefHeight="25.0" prefWidth="19.0" style="-fx-background-color: Transparent;" />
+   </children>
+</AnchorPane>
