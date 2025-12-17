@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="500.0" maxWidth="700.0" minHeight="500.0" minWidth="700.0" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #2878AB;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="506.0" fitWidth="359.0" layoutX="-4.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-2.80755615234375" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="-3.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <image>
+                  <Image url="@../../Images/aaa.png" />
+               </image></ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: linear-gradient(to right, #4B0082, #7851A9);" BorderPane.alignment="CENTER">
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="28.0" layoutY="126.0" style="-fx-background-color: ADD8E64D;" text="LUXURIOUS AND SHINY STEPS" textAlignment="JUSTIFY" AnchorPane.leftAnchor="28.0">
+            <font>
+               <Font name="Segoe Script Bold" size="18.0" />
+            </font></Text>
+            
+            <Button fx:id="btnMainGriş" layoutX="93.0" layoutY="183.0" mnemonicParsing="false" onAction="#ShowLoginScene" 
+            prefHeight="40" prefWidth="150" style="-fx-background-color: A8DADC99; -fx-background-radius: 20;
+             -fx-border-radius: 20; -fx-border-width: 2; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF);;"
+              text="Giriş Yap" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+               <Font size="14.0" />
+            </font>
+            </Button>
+            
+            <Button layoutX="93.0" layoutY="242.0" mnemonicParsing="false" onAction="#ShowKayitOlScene" prefHeight="40" prefWidth="150" style="-fx-background-color: A8DADC99; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF);" text="Üye Ol" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+               <Font size="14.0" />
+            </font></Button>
+         <Button layoutX="93.0" layoutY="298.0" mnemonicParsing="false" onAction="#ShowAdminLoginScene" prefHeight="40" prefWidth="150" style="-fx-background-color: A8DADC99; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF);" text="Admin Giriş" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Button>
+         <Button layoutX="309.0" layoutY="14.0" mnemonicParsing="false" onAction="#CloseForm" style="-fx-background-color: ADD8E64D; -fx-border-width: 2; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF); -fx-border-radius: 50; -fx-background-radius: 50;" text="X" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Button>
+    
+      </AnchorPane>
+   </center>
+</BorderPane>

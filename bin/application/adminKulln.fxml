@@ -1,1 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="709.0" style="-fx-background-color: linear-gradient(to right, #4B0082, #7851A9);;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.adminKullnController">
+	<children>
+		<Button layoutX="666.0" layoutY="11.0" mnemonicParsing="false" onAction="#CloseForm" style="-fx-background-color: ADD8E64D; -fx-border-width: 2; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF); -fx-border-radius: 50; -fx-background-radius: 50;" text="X" textAlignment="JUSTIFY" textFill="WHITE">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Button>
+		<SVGPath content="M5.82843 6.99955L8.36396 9.53509L6.94975 10.9493L2 5.99955L6.94975 1.0498L8.36396 2.46402L5.82843 4.99955H13C17.4183 4.99955 21 8.58127 21 12.9996C21 17.4178 17.4183 20.9996 13 20.9996H4V18.9996H13C16.3137 18.9996 19 16.3133 19 12.9996C19 9.68584 16.3137 6.99955 13 6.99955H5.82843Z" layoutX="678.0" layoutY="432.0" onMouseClicked="#BackToAdminLogin" />
+		<TabPane layoutX="26.0" layoutY="62.0" prefHeight="325.0" prefWidth="654.0" side="LEFT" style="-fx-background-color: Transparent;" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab style="-fx-background-color: white; -fx-pref-width: 100; -fx-pref-height: 100; -fx-rotate: 90; -fx-pedding: 80; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF); -fx-background-radius: 0; -fx-border-radius: 0;" text="ÜRÜN EKLE">
+					<content>
+						<AnchorPane prefHeight="200.0" prefWidth="200.0">
+							<children>
+								<Label layoutX="59.0" layoutY="15.0" prefHeight="34.0" prefWidth="100.0" text="ÜRÜN ADI" textFill="#fffefe">
+									<font>
+										<Font name="Times New Roman" size="18.0" />
+									</font>
+								</Label>
+								<TextField fx:id="txtUrunAdi" layoutX="12.0" layoutY="48.0" prefHeight="34.0" prefWidth="218.0" promptText="ürün adı giriniz" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(to right, #0598ff, #4B0082 ); -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #FFFFFF;" />
+								<Label layoutX="78.0" layoutY="89.0" prefHeight="34.0" prefWidth="100.0" text="FİYAT" textFill="WHITE">
+									<font>
+										<Font name="Times New Roman" size="18.0" />
+									</font>
+								</Label>
+								<TextField fx:id="txtAciklama" layoutX="9.0" layoutY="198.0" prefHeight="80.0" prefWidth="218.0" promptText="ürününüzü birkaç kelime ile açıklayınız." style="-fx-background-color: transparent; -fx-border-color: linear-gradient(to right, #0598ff, #4B0082 ); -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #FFFFFF;" />
+								<Label layoutX="61.0" layoutY="164.0" prefHeight="34.0" prefWidth="100.0" text="AÇIKLAMA" textFill="WHITE">
+									<font>
+										<Font name="Times New Roman" size="18.0" />
+									</font>
+								</Label>
+								<Button fx:id="UrunEkle" layoutX="194.0" layoutY="298.0" mnemonicParsing="false" onAction="#btnEkleClicked" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: A8DADC99; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF);" text="EKLE">
+									<font>
+										<Font name="Times New Roman" size="13.0" />
+									</font>
+								</Button>
+								<TextField fx:id="txtFiyat" layoutX="13.0" layoutY="122.0" prefHeight="34.0" prefWidth="218.0" promptText="fiyat belirleyiniz" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(to right, #0598ff, #4B0082 ); -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: #FFFFFF;" />
+								<ImageView fx:id="imageView" fitHeight="216.0" fitWidth="224.0" layoutX="288.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../../../../../Downloads/1x1_First_of_all_I_need_to_prepare.png" />
+									</image>
+								</ImageView>
+								<Button fx:id="FotoSec" layoutX="327.0" layoutY="253.0" mnemonicParsing="false" onAction="#fotografSec" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: A8DADC99; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF);" text="FOTOĞRAF SEÇ">
+									<font>
+										<Font name="Times New Roman" size="13.0" />
+									</font>
+								</Button>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab style="-fx-background-color: white; -fx-pref-width: 100; -fx-pref-height: 100; -fx-rotate: 90; -fx-pedding: 80; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF); -fx-text-fill: #FFFFFF; -fx-background-radius: 0; -fx-border-radius: 0;" text="STOK KONTROL">
+					<content>
+						<AnchorPane prefHeight="200.0" prefWidth="200.0">
+							<children>
+								<TextField layoutX="90.0" layoutY="51.0" prefHeight="26.0" prefWidth="153.0" promptText="ARA 🔎" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(to right, #0598ff, #4B0082 ); -fx-border-image-width: 0px 0px 2px 0px; -fx-text-fill: #FFFFFF;" />
+								<TableView fx:id="tableUrunler" layoutX="45.0" layoutY="89.0" prefHeight="200.0" prefWidth="449.0" style="-fx-background-color: transparent; -fx-backgrond-color: linear-gradient(to right, #0598ff, #0082 ); -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="45.0">
+									<columns>
+										<TableColumn fx:id="colUrunAdi" prefWidth="75.0" style="-fx-pref-width: 150; -fx-border-color: linear-gradient(to right, #0598ff, #4B0082 );" text="ÜRÜN ADI" />
+										<TableColumn fx:id="colFiyat" prefWidth="75.0" style="-fx-pref-width: 150; -fx-border-color: linear-gradient(to right, #0598ff, #4B0082 );" text="FİYAT" />
+										<TableColumn fx:id="colAciklama" prefWidth="75.0" style="-fx-pref-width: 150; -fx-border-color: linear-gradient(to right, #0598ff, #4B0082 );" text="AÇIKLAMA" />
+									</columns>
+								</TableView>
+								<Label layoutX="126.0" layoutY="10.0" prefHeight="34.0" prefWidth="331.0" text="Stoklar" textFill="#fffdfd">
+									<font>
+										<Font name="Times New Roman" size="20.0" />
+									</font>
+								</Label>
+								<ComboBox layoutX="278.0" layoutY="51.0" prefHeight="26.0" prefWidth="155.0" promptText="KATEGORİLER" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(to right, #0598ff, #4B0082 ); -fx-border-image-width: 0px 0px 2px 0px; -fx-background-insets: #FFFFFF;" />
+								<Button layoutX="167.0" layoutY="289.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" text="STOK GÜNCELLE">
+									<font>
+										<Font name="Times New Roman" size="13.0" />
+									</font>
+								</Button>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab style="-fx-background-color: white; -fx-pref-width: 100; -fx-pref-height: 100; -fx-rotate: 90; -fx-pedding: 80; -fx-border-color: linear-gradient(to right, #4B0082, #FFFFFF); -fx-background-radius: 0; -fx-border-radius: 0;" text="SATIŞ TOPLAM">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="LblToplamTutar" layoutX="14.0" layoutY="14.0" prefHeight="184.0" prefWidth="352.0" style="-fx-background-color: Transparent; -fx-border-color: Linear-gradient(toright,#0598ff,#0082); -fx-border-width: 0px 0px 2px 0px;">
+                          <columns>
+                            <TableColumn fx:id="productNameCol" prefWidth="166.3999605178833" text="ÜRÜN ADI" />
+                            <TableColumn fx:id="productAmountCol" minWidth="0.0" prefWidth="77.60005187988281" text="ADET" />
+                            <TableColumn fx:id="productPriceCol" prefWidth="108.00007629394531" text="FİYAT" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="46.0" layoutY="218.0" prefHeight="28.0" prefWidth="132.0" style="-fx-border-color: Linear-gradient(toright,#0598ff,#0082); -fx-background-color: Transparent; -fx-border-image-width: 0px 0px 2px 0px;" text="       TOPLAM:" textFill="#f7f4f4">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <TextField fx:id="totalPriceField" layoutX="38.0" layoutY="262.0" promptText="TOPLAM TUTAR 💵" style="-fx-background-color: Transparent; -fx-border-image-width: 0px 0px 2px 0px; -fx-border-color: Linear-gradient(toright,#0598ff,#0082);" />
+                        <DatePicker fx:id="DateBaslangic" layoutX="369.0" layoutY="38.0" style="-fx-background-radius: 100; -fx-border-radius: 2; -fx-background-color: Transparent; -fx-border-color: Linear-gradient(toright,#0598ff,#0082);" />
+                        <DatePicker fx:id="DateBitis" layoutX="369.0" layoutY="80.0" style="-fx-background-color: Transparent; -fx-border-radius: 2; -fx-background-radius: 100; -fx-border-color: Linear-gradient(toright,#0598ff,#0082);" />
+                        <Button fx:id="Raporla_Button" layoutX="412.0" layoutY="239.0" mnemonicParsing="false" onAction="#reportButton" text="RAPORLA" />
+                        <Button fx:id="Temizle_Button" layoutX="412.0" layoutY="277.0" mnemonicParsing="false" onAction="#cleanButton" prefHeight="26.0" prefWidth="69.0" text="TEMİZLE" />
+                        <Button fx:id="Uygula_Button" layoutX="431.0" layoutY="135.0" mnemonicParsing="false" onAction="#applyButton" text="UYGULA" />
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</AnchorPane>
